@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">task5</string>
+    <string name="run_range">Meters run</string>
+    <string name="swim_range">Meters swum</string>
+    <string name="calorie">Calories burnt</string>
+    <string name="average_stats">Average:\n Run: %1$s,\n Swim: %2$s,\n Calorie:%3$s;\n Total distance passed: %4$s</string>
+</resources>

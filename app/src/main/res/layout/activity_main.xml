@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    tools:context="task5.MainActivity">
+
+    <EditText
+        android:id="@+id/metersRun"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/run_range"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/metersSwum"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/swim_range"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/metersRun" />
+
+    <EditText
+        android:id="@+id/caloriesBurnt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/calorie"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/metersSwum" />
+
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:clickable="true"
+        android:backgroundTint="#DF4646"
+        android:contentDescription="submit values"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesBurnt"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
